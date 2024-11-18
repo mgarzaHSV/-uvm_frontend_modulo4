@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UVM Modulo 4</title>
+  </head>
+  <body>
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+      section {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <main>
+      <section>
+        <h1>Wheather App</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Wheater</a></li>
+            <li><a href="#">Conocenos</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </nav>
+        <h2>Utiliza este sitio para conocer el clima en las ciudades</h2>
+        <form method="post" action="/">
+          <label for="city">Ciudad:</label>
+          <input type="text" id="city" name="city" required />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

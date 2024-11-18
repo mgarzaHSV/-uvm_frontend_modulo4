@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UVM Modulo 4</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+      main {
+        width: 60%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      article {
+        margin-bottom: 20px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+    <main>
+      <section>
+        <h1>City: <%= data.request.query%></h1>
+        <article>
+          <h2>Local time:<%= data.location.localtime%></h2>
+          <div>
+            <p>Description:<%= data.current.weather_descriptions %></p>
+            <img src="<%= data.current.weather_icons%>" alt="Image reference" />
+            <p>Velocidad de viento:<%= data.current.wind_speed%> MPH</p>
+            <p>Temperatura:<%= data.current.temperature %>°</p>
+            <p>Humedad:<%= data.current.humidity %></p>
+            <p>Presión atmosférica: <%= data.current.pressure %> mbar</p>
+            <p>Dirección del viento:<%= data.current.wind_dir %></p>
+            <p>Visibilidad:<%= data.current.visibility %> %</p>
+            <p>Nubosidad:<%= data.current.cloudcover %> %</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
